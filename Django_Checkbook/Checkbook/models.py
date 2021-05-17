@@ -13,7 +13,7 @@ class Account(models.Model):
     # Allows references to a specific account be returned
     #  as the owner's name not the primary key
     def __str__(self):
-        return self.first_name + ' ' + self.last_name
+        return self.first_name + '' + self.last_name
 
 
 TransactionTypes = [('Deposit', 'Deposit'), ('Withdrawal', 'Withdrawal')]
